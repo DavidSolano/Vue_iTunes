@@ -106,7 +106,6 @@ export default {
         axios.get(url,config)
             .then(response => {
               console.log('api response', response);
-
               if (response.data.results.length > 0){
                 //or without a customer decorator
                 this.searchResults = response.data.results
